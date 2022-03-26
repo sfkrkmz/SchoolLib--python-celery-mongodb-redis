@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kütüphanede Bulunan Kitaplar</h1>
+    <h3>Kütüphanede olmayan kitaplar seçilemez<h3>
+    <hr>
+    <div class="content">
+    <form  action="{{ url_for('toLend')}}" method="post">
+        {% for rs in content %}
+                <p>
+                    {%if rs.inLib == True%}
+                    <input type="radio" id="book_id" name="book_id" value="{{rs.bookId}}">
+                    {% endif %}
+                    <b>{{rs.bookName}} =>  {{rs.authorName}}</b>
+                </p>
+            
+        {% endfor %}
+        <button type="submit">Kitabı Al</button>
+    </form> 
+    <hr>
+
+    </div>
+</body>
+</html>

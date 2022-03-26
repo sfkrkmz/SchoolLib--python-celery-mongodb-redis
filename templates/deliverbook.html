@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    Hoş Geldin,<b> {{user.name}}</b>
+    <br><br>
+    <h3>Alınan Kitaplar<h3>
+    <hr>
+    <div class="content">
+    <form  action="{{ url_for('deliverBook')}}" method="post">
+        {% for rs in books %}
+                <p>
+                    <input type="radio" id="book_id" name="book_id" value="{{rs.bookId}}">
+                    <b>{{rs.bookName}} =>  {{rs.authorName}}</b>
+                </p>
+        {% endfor %}
+        <button type="submit">Kitabı Ver</button>
+    </form> 
+    <hr>
+
+    </div>
+</body>
+</html>

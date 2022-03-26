@@ -1,4 +1,4 @@
-## SchooleLib--python-celery-mongodb-redis
+## SchoolLib--python-celery-mongodb-redis
 SchooleLib - python - celery - mongodb - redis
 
 # Adımlar

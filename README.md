@@ -1,9 +1,9 @@
 ## SchooleLib--python-celery-mongodb-redis
 SchooleLib - python - celery - mongodb - redis
 
-#Adımlar
+# Adımlar
 
-####NOT: Projenin çalışması için eksik modülleri  "pip install <modulename>" komutu ile indirebilirsiniz. 
+#### NOT: Projenin çalışması için eksik modülleri  "pip install <modulename>" komutu ile indirebilirsiniz. 
 
 
 1- powershell üzerinden dosya dizinine gidin ve " python.exe app.py " komutunu çalıştırın. 
@@ -12,7 +12,7 @@ SchooleLib - python - celery - mongodb - redis
 
 proje ayağa kaldırıldı.
 
-##linkler
+## linkler
 
 localhost:5001/register 	=> üye olma
 localhost:5001/login  		=> login olma
